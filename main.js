@@ -4,15 +4,12 @@
 (function () {
     'use strict';
 
-    let customerArray = [];
-
     function generatePeople(limit, counter=1){
         if (counter <= limit){
             console.log(counter);
             fetch('https://randomuser.me/api')
                 .then(response => response.json())
                 .then(data => {
-                    customerArray.push(data.results[0]);
                     console.log(data.results[0]);
                     createElement(data.results[0]);
                 });

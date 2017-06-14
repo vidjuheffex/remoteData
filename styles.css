@@ -39,9 +39,11 @@ h1 {
 h3.contactHeader{
     width: auto;
     text-transform: uppercase;
+    padding: .5rem 0 ;
     margin: 1rem;
-    font-size: 100%;
-    border-bottom: 1px solid green;
+    font-size: 90%;
+    white-space: nowrap;
+    border-bottom: 2px solid green;
     display: inline-block;
 }
 
